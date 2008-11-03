@@ -3,32 +3,33 @@ xfce4-panel
 Xfce4 desktop panel
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  gdk-pixbuf2-2.10.11-1
-  glib2-2.12.11-1
-  gtk2-x11-2.10.11-1
-  libX11_6-1.1.1-1
-  libintl8-0.15-1
-  pango-1.14.10-1
-  libxfce4mcs-4.4.1-1
-  libxfce4util-4.4.1-1
-  libxfcegui4-4.4.1-1
-  xfce-mcs-manager-4.4.1-1
+  cygwin-1.5.25-15
+  gdk-pixbuf2-2.12.12-1
+  glib2-2.16.6-1
+  gtk2-x11-2.12.12-1
+  libcairo2-1.6.4-2
+  libexo03-0.3.91-1
+  libintl8-0.17-2
+  libwnck1_22-2.22.3-1
+  libX11_6-1.1.5-1
+  libxfce4util-4.5.91-1
+  libxfcegui4-4.5.91-1
+  pango-1.20.5-1
+  startup-notification-0.9-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.1-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-1
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.4.0-1
+  xfce4-dev-tools-4.5.91-1
 
 Canonical website:
   http://www.xfce.org/
@@ -39,15 +40,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce4-panel-4.4.1-X-src.tar.bz2
+  unpack xfce4-panel-4.5.91-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce4-panel-4.4.1-X.cygport all
+  cygport ./xfce4-panel-4.5.91-X.cygport all
 
 This will create:
-  /usr/src/xfce4-panel-4.4.1-X-src.tar.bz2
-  /usr/src/xfce4-panel-4.4.1-X.tar.bz2
+  /usr/src/xfce4-panel-4.5.91-X-src.tar.bz2
+  /usr/src/xfce4-panel-4.5.91-X.tar.bz2
 
 -------------------------------------------
 
@@ -63,15 +64,13 @@ Files included in the binary package:
   /etc/xdg/xfce4/panel/systray-4.rc
   /etc/xdg/xfce4/panel/xfce4-menu-5.rc
   /usr/bin/cygxfce4panel-1.dll
-  /usr/bin/xfce4-iconbox
   /usr/bin/xfce4-panel.exe
   /usr/bin/xfce4-popup-windowlist.exe
-  /usr/bin/xftaskbar4
+  /usr/include/xfce4/libxfce4panel/libxfce4panel-enum-types.h
   /usr/include/xfce4/libxfce4panel/xfce-arrow-button.h
   /usr/include/xfce4/libxfce4panel/xfce-hvbox.h
   /usr/include/xfce4/libxfce4panel/xfce-itembar.h
   /usr/include/xfce4/libxfce4panel/xfce-panel-convenience.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-enum-types.h
   /usr/include/xfce4/libxfce4panel/xfce-panel-enums.h
   /usr/include/xfce4/libxfce4panel/xfce-panel-external-plugin.h
   /usr/include/xfce4/libxfce4panel/xfce-panel-internal-plugin.h
@@ -82,8 +81,6 @@ Files included in the binary package:
   /usr/lib/libxfce4panel.dll.a
   /usr/lib/libxfce4panel.la
   /usr/lib/pkgconfig/libxfce4panel-1.0.pc
-  /usr/lib/xfce4/mcs-plugins/cygxfce4settings.dll
-  /usr/lib/xfce4/mcs-plugins/libxfce4settings.la
   /usr/lib/xfce4/panel-plugins/cygactions.dll
   /usr/lib/xfce4/panel-plugins/cygclock.dll
   /usr/lib/xfce4/panel-plugins/cygiconbox.dll
@@ -105,14 +102,15 @@ Files included in the binary package:
   /usr/lib/xfce4/panel-plugins/libtasklist.la
   /usr/lib/xfce4/panel-plugins/libwindowlist.la
   /usr/share/applications/xfce4-panel-manager.desktop
-  /usr/share/doc/Cygwin/xfce4-panel-4.4.1.README
-  /usr/share/doc/xfce4-panel-4.4.1/AUTHORS
-  /usr/share/doc/xfce4-panel-4.4.1/COPYING
-  /usr/share/doc/xfce4-panel-4.4.1/ChangeLog
-  /usr/share/doc/xfce4-panel-4.4.1/HACKING
-  /usr/share/doc/xfce4-panel-4.4.1/INSTALL
-  /usr/share/doc/xfce4-panel-4.4.1/NEWS
-  /usr/share/doc/xfce4-panel-4.4.1/README
+  /usr/share/doc/xfce4-panel-4.5.91/AUTHORS
+  /usr/share/doc/xfce4-panel-4.5.91/COPYING
+  /usr/share/doc/xfce4-panel-4.5.91/COPYING.LIB
+  /usr/share/doc/xfce4-panel-4.5.91/ChangeLog
+  /usr/share/doc/xfce4-panel-4.5.91/HACKING
+  /usr/share/doc/xfce4-panel-4.5.91/INSTALL
+  /usr/share/doc/xfce4-panel-4.5.91/NEWS
+  /usr/share/doc/xfce4-panel-4.5.91/README
+  /usr/share/doc/xfce4-panel-4.5.91/TODO
   /usr/share/gtk-doc/html/libxfce4panel/XfceArrowButton.html
   /usr/share/gtk-doc/html/libxfce4panel/XfceExternalPanelPlugin.html
   /usr/share/gtk-doc/html/libxfce4panel/XfceHVBox.html
@@ -120,28 +118,34 @@ Files included in the binary package:
   /usr/share/gtk-doc/html/libxfce4panel/XfceItembar.html
   /usr/share/gtk-doc/html/libxfce4panel/XfcePanelPlugin.html
   /usr/share/gtk-doc/html/libxfce4panel/XfcePanelWindow.html
-  /usr/share/gtk-doc/html/libxfce4panel/ch01.html
   /usr/share/gtk-doc/html/libxfce4panel/home.png
   /usr/share/gtk-doc/html/libxfce4panel/index.html
   /usr/share/gtk-doc/html/libxfce4panel/index.sgml
+  /usr/share/gtk-doc/html/libxfce4panel/ix01.html
+  /usr/share/gtk-doc/html/libxfce4panel/ix02.html
   /usr/share/gtk-doc/html/libxfce4panel/left.png
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Convenience-Functions.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Common-macros.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Convenience-Widgets.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Register-Plugins.html
   /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Standard-Enumerations.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Writing-Plugins.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-fundamentals.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-panel.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-widgets.html
   /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel.devhelp
   /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel.devhelp2
   /usr/share/gtk-doc/html/libxfce4panel/right.png
   /usr/share/gtk-doc/html/libxfce4panel/style.css
   /usr/share/gtk-doc/html/libxfce4panel/up.png
   /usr/share/icons/hicolor/16x16/apps/xfce-system-exit.png
-  /usr/share/icons/hicolor/16x16/apps/xfce-system-info.png
   /usr/share/icons/hicolor/16x16/apps/xfce-system-lock.png
-  /usr/share/icons/hicolor/16x16/apps/xfce-system-settings.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-mail.png
   /usr/share/icons/hicolor/48x48/apps/xfce-mouse.png
+  /usr/share/icons/hicolor/48x48/apps/xfce4-clock.png
   /usr/share/icons/hicolor/48x48/apps/xfce4-iconbox.png
   /usr/share/icons/hicolor/48x48/apps/xfce4-panel.png
+  /usr/share/icons/hicolor/48x48/apps/xfce4-separator.png
+  /usr/share/icons/hicolor/48x48/apps/xfce4-systray.png
   /usr/share/icons/hicolor/48x48/apps/xfce4-taskbar.png
+  /usr/share/locale/am/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/ar/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/az/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/be/LC_MESSAGES/xfce4-panel.mo
@@ -149,6 +153,7 @@ Files included in the binary package:
   /usr/share/locale/bn_IN/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/ca/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/cs/LC_MESSAGES/xfce4-panel.mo
+  /usr/share/locale/da/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/de/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/dz/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/el/LC_MESSAGES/xfce4-panel.mo
@@ -167,11 +172,14 @@ Files included in the binary package:
   /usr/share/locale/hi/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/hu/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/hy/LC_MESSAGES/xfce4-panel.mo
+  /usr/share/locale/id/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/it/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/ja/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/ka/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/ko/LC_MESSAGES/xfce4-panel.mo
+  /usr/share/locale/ku/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/lt/LC_MESSAGES/xfce4-panel.mo
+  /usr/share/locale/lv/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/mk/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/mr/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/ms/LC_MESSAGES/xfce4-panel.mo
@@ -183,11 +191,14 @@ Files included in the binary package:
   /usr/share/locale/pt_PT/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/ro/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/ru/LC_MESSAGES/xfce4-panel.mo
+  /usr/share/locale/si/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/sk/LC_MESSAGES/xfce4-panel.mo
+  /usr/share/locale/sq/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/sv/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/ta/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/tr/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/uk/LC_MESSAGES/xfce4-panel.mo
+  /usr/share/locale/ur/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/vi/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/xfce4-panel.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/xfce4-panel.mo
@@ -212,6 +223,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 4.5.91-1 -----
+Version bump for 4.6-beta2.
 
 ----- version 4.4.1-1 -----
 Initial release of Xfce 4.4 for Cygwin.
