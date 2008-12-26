@@ -4,23 +4,23 @@ Xfce4 desktop panel
 
 Runtime requirements:
   cygwin-1.5.25-15
-  gdk-pixbuf2-2.12.12-1
-  glib2-2.16.6-1
-  gtk2-x11-2.12.12-1
-  libcairo2-1.6.4-2
-  libexo03-0.3.91-1
+  libcairo2-1.8.6-1
+  libexo0.3_0-0.3.92-1
+  libgdk_pixbuf2.0_0-2.14.6-1
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.6-1
   libintl8-0.17-2
-  libwnck1_22-2.22.3-1
+  libpango1.0_0-1.22.4-1
+  libstartup-notification1_0-0.9-2
+  libwnck1_22-2.24.2-1
   libX11_6-1.1.5-1
-  libxfce4util-4.5.91-1
-  libxfcegui4-4.5.91-1
-  pango-1.20.5-1
-  startup-notification-0.9-1
+  libxfce4util4-4.5.92-1
+  libxfcegui4_4-4.5.92-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
   cygport-0.4.3-1
   gawk-3.1.6-1
@@ -29,7 +29,7 @@ Build requirements:
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.5.91-1
+  xfce4-dev-tools-4.5.92-1
 
 Canonical website:
   http://www.xfce.org/
@@ -40,15 +40,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce4-panel-4.5.91-X-src.tar.bz2
+  unpack xfce4-panel-4.5.92-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce4-panel-4.5.91-X.cygport all
+  cygport ./xfce4-panel-4.5.92-X.cygport all
 
 This will create:
-  /usr/src/xfce4-panel-4.5.91-X-src.tar.bz2
-  /usr/src/xfce4-panel-4.5.91-X.tar.bz2
+  /usr/src/xfce4-panel-4.5.92-X-src.tar.bz2
+  /usr/src/xfce4-panel-4.5.92-X.tar.bz2
 
 -------------------------------------------
 
@@ -102,15 +102,15 @@ Files included in the binary package:
   /usr/lib/xfce4/panel-plugins/libtasklist.la
   /usr/lib/xfce4/panel-plugins/libwindowlist.la
   /usr/share/applications/xfce4-panel-manager.desktop
-  /usr/share/doc/xfce4-panel-4.5.91/AUTHORS
-  /usr/share/doc/xfce4-panel-4.5.91/COPYING
-  /usr/share/doc/xfce4-panel-4.5.91/COPYING.LIB
-  /usr/share/doc/xfce4-panel-4.5.91/ChangeLog
-  /usr/share/doc/xfce4-panel-4.5.91/HACKING
-  /usr/share/doc/xfce4-panel-4.5.91/INSTALL
-  /usr/share/doc/xfce4-panel-4.5.91/NEWS
-  /usr/share/doc/xfce4-panel-4.5.91/README
-  /usr/share/doc/xfce4-panel-4.5.91/TODO
+  /usr/share/doc/xfce4-panel-4.5.92/AUTHORS
+  /usr/share/doc/xfce4-panel-4.5.92/COPYING
+  /usr/share/doc/xfce4-panel-4.5.92/COPYING.LIB
+  /usr/share/doc/xfce4-panel-4.5.92/ChangeLog
+  /usr/share/doc/xfce4-panel-4.5.92/HACKING
+  /usr/share/doc/xfce4-panel-4.5.92/INSTALL
+  /usr/share/doc/xfce4-panel-4.5.92/NEWS
+  /usr/share/doc/xfce4-panel-4.5.92/README
+  /usr/share/doc/xfce4-panel-4.5.92/TODO
   /usr/share/gtk-doc/html/libxfce4panel/XfceArrowButton.html
   /usr/share/gtk-doc/html/libxfce4panel/XfceExternalPanelPlugin.html
   /usr/share/gtk-doc/html/libxfce4panel/XfceHVBox.html
@@ -224,8 +224,11 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 4.5.91-1 -----
+----- version 4.5.92-1 -----
 Version bump for 4.6-beta2.
+
+----- version 4.5.91-1 -----
+Version bump for 4.6-beta1.
 
 ----- version 4.4.1-1 -----
 Initial release of Xfce 4.4 for Cygwin.
