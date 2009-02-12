@@ -5,17 +5,17 @@ Xfce4 desktop panel
 Runtime requirements:
   cygwin-1.5.25-15
   libcairo2-1.8.6-1
-  libexo0.3_0-0.3.92-1
-  libgdk_pixbuf2.0_0-2.14.6-1
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.6-1
+  libexo0.3_0-0.3.99.1-1
+  libgdk_pixbuf2.0_0-2.14.7-2
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-2
   libintl8-0.17-2
   libpango1.0_0-1.22.4-1
   libstartup-notification1_0-0.9-2
   libwnck1_22-2.24.2-1
-  libX11_6-1.1.5-1
-  libxfce4util4-4.5.92-1
-  libxfcegui4_4-4.5.92-1
+  libX11_6-1.1.5-2
+  libxfce4util4-4.5.99.1-1
+  libxfcegui4_4-4.5.99.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -29,7 +29,7 @@ Build requirements:
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.5.92-1
+  xfce4-dev-tools-4.5.99.1-1
 
 Canonical website:
   http://www.xfce.org/
@@ -40,15 +40,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce4-panel-4.5.92-X-src.tar.bz2
+  unpack xfce4-panel-4.5.99.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce4-panel-4.5.92-X.cygport all
+  cygport ./xfce4-panel-4.5.99.1-X.cygport all
 
 This will create:
-  /usr/src/xfce4-panel-4.5.92-X-src.tar.bz2
-  /usr/src/xfce4-panel-4.5.92-X.tar.bz2
+  /usr/src/libxfce4panel-devel-4.5.99.1-X.tar.bz2
+  /usr/src/libxfce4panel1-4.5.99.1-X.tar.bz2
+  /usr/src/xfce4-panel-4.5.99.1-X-src.tar.bz2
+  /usr/src/xfce4-panel-4.5.99.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -63,24 +65,8 @@ Files included in the binary package:
   /etc/xdg/xfce4/panel/panels.xml
   /etc/xdg/xfce4/panel/systray-4.rc
   /etc/xdg/xfce4/panel/xfce4-menu-5.rc
-  /usr/bin/cygxfce4panel-1.dll
   /usr/bin/xfce4-panel.exe
   /usr/bin/xfce4-popup-windowlist.exe
-  /usr/include/xfce4/libxfce4panel/libxfce4panel-enum-types.h
-  /usr/include/xfce4/libxfce4panel/xfce-arrow-button.h
-  /usr/include/xfce4/libxfce4panel/xfce-hvbox.h
-  /usr/include/xfce4/libxfce4panel/xfce-itembar.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-convenience.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-enums.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-external-plugin.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-internal-plugin.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-macros.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-plugin-iface.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-plugin.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-window.h
-  /usr/lib/libxfce4panel.dll.a
-  /usr/lib/libxfce4panel.la
-  /usr/lib/pkgconfig/libxfce4panel-1.0.pc
   /usr/lib/xfce4/panel-plugins/cygactions.dll
   /usr/lib/xfce4/panel-plugins/cygclock.dll
   /usr/lib/xfce4/panel-plugins/cygiconbox.dll
@@ -102,40 +88,15 @@ Files included in the binary package:
   /usr/lib/xfce4/panel-plugins/libtasklist.la
   /usr/lib/xfce4/panel-plugins/libwindowlist.la
   /usr/share/applications/xfce4-panel-manager.desktop
-  /usr/share/doc/xfce4-panel-4.5.92/AUTHORS
-  /usr/share/doc/xfce4-panel-4.5.92/COPYING
-  /usr/share/doc/xfce4-panel-4.5.92/COPYING.LIB
-  /usr/share/doc/xfce4-panel-4.5.92/ChangeLog
-  /usr/share/doc/xfce4-panel-4.5.92/HACKING
-  /usr/share/doc/xfce4-panel-4.5.92/INSTALL
-  /usr/share/doc/xfce4-panel-4.5.92/NEWS
-  /usr/share/doc/xfce4-panel-4.5.92/README
-  /usr/share/doc/xfce4-panel-4.5.92/TODO
-  /usr/share/gtk-doc/html/libxfce4panel/XfceArrowButton.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfceExternalPanelPlugin.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfceHVBox.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfceInternalPanelPlugin.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfceItembar.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfcePanelPlugin.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfcePanelWindow.html
-  /usr/share/gtk-doc/html/libxfce4panel/home.png
-  /usr/share/gtk-doc/html/libxfce4panel/index.html
-  /usr/share/gtk-doc/html/libxfce4panel/index.sgml
-  /usr/share/gtk-doc/html/libxfce4panel/ix01.html
-  /usr/share/gtk-doc/html/libxfce4panel/ix02.html
-  /usr/share/gtk-doc/html/libxfce4panel/left.png
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Common-macros.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Convenience-Widgets.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Register-Plugins.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Standard-Enumerations.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-fundamentals.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-panel.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-widgets.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel.devhelp
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel.devhelp2
-  /usr/share/gtk-doc/html/libxfce4panel/right.png
-  /usr/share/gtk-doc/html/libxfce4panel/style.css
-  /usr/share/gtk-doc/html/libxfce4panel/up.png
+  /usr/share/doc/xfce4-panel-4.5.99.1/AUTHORS
+  /usr/share/doc/xfce4-panel-4.5.99.1/COPYING
+  /usr/share/doc/xfce4-panel-4.5.99.1/COPYING.LIB
+  /usr/share/doc/xfce4-panel-4.5.99.1/ChangeLog
+  /usr/share/doc/xfce4-panel-4.5.99.1/HACKING
+  /usr/share/doc/xfce4-panel-4.5.99.1/INSTALL
+  /usr/share/doc/xfce4-panel-4.5.99.1/NEWS
+  /usr/share/doc/xfce4-panel-4.5.99.1/README
+  /usr/share/doc/xfce4-panel-4.5.99.1/TODO
   /usr/share/icons/hicolor/16x16/apps/xfce-system-exit.png
   /usr/share/icons/hicolor/16x16/apps/xfce-system-lock.png
   /usr/share/icons/hicolor/48x48/apps/xfce-mouse.png
@@ -220,9 +181,57 @@ Files included in the binary package:
   /usr/share/xfce4/panel-plugins/tasklist.desktop
   /usr/share/xfce4/panel-plugins/windowlist.desktop
 
+(libxfce4panel1)
+  /usr/bin/cygxfce4panel-1.dll
+
+(libxfce4panel-devel)
+  /usr/include/xfce4/libxfce4panel/libxfce4panel-enum-types.h
+  /usr/include/xfce4/libxfce4panel/xfce-arrow-button.h
+  /usr/include/xfce4/libxfce4panel/xfce-hvbox.h
+  /usr/include/xfce4/libxfce4panel/xfce-itembar.h
+  /usr/include/xfce4/libxfce4panel/xfce-panel-convenience.h
+  /usr/include/xfce4/libxfce4panel/xfce-panel-enums.h
+  /usr/include/xfce4/libxfce4panel/xfce-panel-external-plugin.h
+  /usr/include/xfce4/libxfce4panel/xfce-panel-internal-plugin.h
+  /usr/include/xfce4/libxfce4panel/xfce-panel-macros.h
+  /usr/include/xfce4/libxfce4panel/xfce-panel-plugin-iface.h
+  /usr/include/xfce4/libxfce4panel/xfce-panel-plugin.h
+  /usr/include/xfce4/libxfce4panel/xfce-panel-window.h
+  /usr/lib/libxfce4panel.dll.a
+  /usr/lib/libxfce4panel.la
+  /usr/lib/pkgconfig/libxfce4panel-1.0.pc
+  /usr/share/gtk-doc/html/libxfce4panel/XfceArrowButton.html
+  /usr/share/gtk-doc/html/libxfce4panel/XfceExternalPanelPlugin.html
+  /usr/share/gtk-doc/html/libxfce4panel/XfceHVBox.html
+  /usr/share/gtk-doc/html/libxfce4panel/XfceInternalPanelPlugin.html
+  /usr/share/gtk-doc/html/libxfce4panel/XfceItembar.html
+  /usr/share/gtk-doc/html/libxfce4panel/XfcePanelPlugin.html
+  /usr/share/gtk-doc/html/libxfce4panel/XfcePanelWindow.html
+  /usr/share/gtk-doc/html/libxfce4panel/home.png
+  /usr/share/gtk-doc/html/libxfce4panel/index.html
+  /usr/share/gtk-doc/html/libxfce4panel/index.sgml
+  /usr/share/gtk-doc/html/libxfce4panel/ix01.html
+  /usr/share/gtk-doc/html/libxfce4panel/ix02.html
+  /usr/share/gtk-doc/html/libxfce4panel/left.png
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Common-macros.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Convenience-Widgets.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Register-Plugins.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Standard-Enumerations.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-fundamentals.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-panel.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-widgets.html
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel.devhelp
+  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel.devhelp2
+  /usr/share/gtk-doc/html/libxfce4panel/right.png
+  /usr/share/gtk-doc/html/libxfce4panel/style.css
+  /usr/share/gtk-doc/html/libxfce4panel/up.png
+
 ------------------
 
 Port Notes:
+
+----- version 4.5.99.1-1 -----
+Version bump for 4.6-rc1.
 
 ----- version 4.5.92-1 -----
 Version bump for 4.6-beta2.

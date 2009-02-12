@@ -1,0 +1,4 @@
+category: X11
+requires: cygwin libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libcairo2 libexo0.3_0 libintl8 libwnck1_22 libX11_6 libxfce4util4 libxfcegui4_4 libxfce4panel1 libpango1.0_0 libstartup-notification1_0
+sdesc: "Xfce4 desktop panel"
+ldesc: "Xfce4 desktop panel"
