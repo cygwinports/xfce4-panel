@@ -3,18 +3,18 @@ xfce4-panel
 Xfce4 desktop panel
 
 Runtime requirements:
-  cygwin-1.7.0-49
-  libcairo2-1.8.6-10
-  libexo0.3_0-0.3.101-1
-  libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.2-1
-  libglib2.0_0-2.20.3-1
-  libgtk2.0_0-2.16.2-1
+  cygwin-1.7.0-62
+  libcairo2-1.8.8-1
+  libexo0.3_0-0.3.105-1
+  libgcc1-4.3.4-1
+  libgdk_pixbuf2.0_0-2.16.6-1
+  libglib2.0_0-2.20.5-1
+  libgtk2.0_0-2.16.6-1
   libintl8-0.17-11
-  libpango1.0_0-1.24.2-1
+  libpango1.0_0-1.24.5-1
   libstartup-notification1_0-0.10-1
-  libwnck1_22-2.26.1-1
-  libX11_6-1.2-10
+  libwnck1_22-2.26.2-1
+  libX11_6-1.3.1-1
   libxfce4util4-4.6.1-1
   libxfcegui4_4-4.6.1-1
 
@@ -22,11 +22,11 @@ Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
   automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libtool-2.2.7a-12
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -41,194 +41,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce4-panel-4.6.1-X-src.tar.bz2
+  unpack xfce4-panel-4.6.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce4-panel-4.6.1-X.cygport all
+  cygport ./xfce4-panel-4.6.2-X.cygport all
 
 This will create:
-  /usr/src/libxfce4panel-devel-4.6.1-X.tar.bz2
-  /usr/src/libxfce4panel1-4.6.1-X.tar.bz2
-  /usr/src/xfce4-panel-4.6.1-X-src.tar.bz2
-  /usr/src/xfce4-panel-4.6.1-X.tar.bz2
+  /usr/src/libxfce4panel-devel-4.6.2-X.tar.bz2
+  /usr/src/libxfce4panel1-4.6.2-X.tar.bz2
+  /usr/src/xfce4-panel-4.6.2-X-src.tar.bz2
+  /usr/src/xfce4-panel-4.6.2-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /etc/postinstall/xfce4-panel.sh
-  /etc/xdg/xfce4/panel/clock-14.rc
-  /etc/xdg/xfce4/panel/launcher-10.rc
-  /etc/xdg/xfce4/panel/launcher-7.rc
-  /etc/xdg/xfce4/panel/launcher-8.rc
-  /etc/xdg/xfce4/panel/launcher-9.rc
-  /etc/xdg/xfce4/panel/panels.xml
-  /etc/xdg/xfce4/panel/systray-4.rc
-  /etc/xdg/xfce4/panel/xfce4-menu-5.rc
-  /usr/bin/xfce4-panel.exe
-  /usr/bin/xfce4-popup-windowlist.exe
-  /usr/lib/xfce4/panel-plugins/cygactions.dll
-  /usr/lib/xfce4/panel-plugins/cygclock.dll
-  /usr/lib/xfce4/panel-plugins/cygiconbox.dll
-  /usr/lib/xfce4/panel-plugins/cyglauncher.dll
-  /usr/lib/xfce4/panel-plugins/cygpager.dll
-  /usr/lib/xfce4/panel-plugins/cygseparator.dll
-  /usr/lib/xfce4/panel-plugins/cygshowdesktop.dll
-  /usr/lib/xfce4/panel-plugins/cygsystray.dll
-  /usr/lib/xfce4/panel-plugins/cygtasklist.dll
-  /usr/lib/xfce4/panel-plugins/cygwindowlist.dll
-  /usr/lib/xfce4/panel-plugins/libactions.la
-  /usr/lib/xfce4/panel-plugins/libclock.la
-  /usr/lib/xfce4/panel-plugins/libiconbox.la
-  /usr/lib/xfce4/panel-plugins/liblauncher.la
-  /usr/lib/xfce4/panel-plugins/libpager.la
-  /usr/lib/xfce4/panel-plugins/libseparator.la
-  /usr/lib/xfce4/panel-plugins/libshowdesktop.la
-  /usr/lib/xfce4/panel-plugins/libsystray.la
-  /usr/lib/xfce4/panel-plugins/libtasklist.la
-  /usr/lib/xfce4/panel-plugins/libwindowlist.la
-  /usr/share/applications/xfce4-panel-manager.desktop
-  /usr/share/doc/xfce4-panel/AUTHORS
-  /usr/share/doc/xfce4-panel/COPYING
-  /usr/share/doc/xfce4-panel/COPYING.LIB
-  /usr/share/doc/xfce4-panel/ChangeLog
-  /usr/share/doc/xfce4-panel/HACKING
-  /usr/share/doc/xfce4-panel/NEWS
-  /usr/share/doc/xfce4-panel/README
-  /usr/share/doc/xfce4-panel/TODO
-  /usr/share/icons/hicolor/16x16/apps/xfce-system-exit.png
-  /usr/share/icons/hicolor/16x16/apps/xfce-system-lock.png
-  /usr/share/icons/hicolor/48x48/apps/xfce-mouse.png
-  /usr/share/icons/hicolor/48x48/apps/xfce4-clock.png
-  /usr/share/icons/hicolor/48x48/apps/xfce4-iconbox.png
-  /usr/share/icons/hicolor/48x48/apps/xfce4-panel.png
-  /usr/share/icons/hicolor/48x48/apps/xfce4-separator.png
-  /usr/share/icons/hicolor/48x48/apps/xfce4-systray.png
-  /usr/share/icons/hicolor/48x48/apps/xfce4-taskbar.png
-  /usr/share/locale/am/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ar/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/az/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/be/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/bg/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/bn_IN/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ca/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/cs/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/da/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/de/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/dz/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/el/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/eo/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/es/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/es_MX/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/et/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/eu/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/fa/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/fi/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/fr/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/gl/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/gu/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/he/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/hi/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/hu/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/hy/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/id/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/it/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ja/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ka/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ko/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ku/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/lt/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/lv/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/mk/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/mr/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ms/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/nb_NO/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/nl/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/pa/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/pl/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/pt_PT/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ro/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ru/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/si/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/sk/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/sq/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/sv/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ta/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/tr/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/uk/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/ur/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/vi/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/xfce4-panel.mo
-  /usr/share/xfce4/doc/C/images/add_item_dialog.png
-  /usr/share/xfce4/doc/C/images/default_bottom_panel.png
-  /usr/share/xfce4/doc/C/images/default_top_panel.png
-  /usr/share/xfce4/doc/C/images/item_popup.png
-  /usr/share/xfce4/doc/C/images/launcher_properties.png
-  /usr/share/xfce4/doc/C/images/panel_manager.png
-  /usr/share/xfce4/doc/C/xfce4-panel.html
-  /usr/share/xfce4/panel-plugins/actions.desktop
-  /usr/share/xfce4/panel-plugins/clock.desktop
-  /usr/share/xfce4/panel-plugins/iconbox.desktop
-  /usr/share/xfce4/panel-plugins/launcher.desktop
-  /usr/share/xfce4/panel-plugins/pager.desktop
-  /usr/share/xfce4/panel-plugins/separator.desktop
-  /usr/share/xfce4/panel-plugins/showdesktop.desktop
-  /usr/share/xfce4/panel-plugins/systray.desktop
-  /usr/share/xfce4/panel-plugins/tasklist.desktop
-  /usr/share/xfce4/panel-plugins/windowlist.desktop
-
-(libxfce4panel1)
-  /usr/bin/cygxfce4panel-1.dll
-
-(libxfce4panel-devel)
-  /usr/include/xfce4/libxfce4panel/libxfce4panel-enum-types.h
-  /usr/include/xfce4/libxfce4panel/xfce-arrow-button.h
-  /usr/include/xfce4/libxfce4panel/xfce-hvbox.h
-  /usr/include/xfce4/libxfce4panel/xfce-itembar.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-convenience.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-enums.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-external-plugin.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-internal-plugin.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-macros.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-plugin-iface.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-plugin.h
-  /usr/include/xfce4/libxfce4panel/xfce-panel-window.h
-  /usr/lib/libxfce4panel.dll.a
-  /usr/lib/libxfce4panel.la
-  /usr/lib/pkgconfig/libxfce4panel-1.0.pc
-  /usr/share/gtk-doc/html/libxfce4panel/XfceArrowButton.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfceExternalPanelPlugin.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfceHVBox.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfceInternalPanelPlugin.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfceItembar.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfcePanelPlugin.html
-  /usr/share/gtk-doc/html/libxfce4panel/XfcePanelWindow.html
-  /usr/share/gtk-doc/html/libxfce4panel/home.png
-  /usr/share/gtk-doc/html/libxfce4panel/index.html
-  /usr/share/gtk-doc/html/libxfce4panel/index.sgml
-  /usr/share/gtk-doc/html/libxfce4panel/ix01.html
-  /usr/share/gtk-doc/html/libxfce4panel/ix02.html
-  /usr/share/gtk-doc/html/libxfce4panel/left.png
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Common-macros.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Convenience-Widgets.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Register-Plugins.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-Standard-Enumerations.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-fundamentals.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-panel.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel-widgets.html
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel.devhelp
-  /usr/share/gtk-doc/html/libxfce4panel/libxfce4panel.devhelp2
-  /usr/share/gtk-doc/html/libxfce4panel/right.png
-  /usr/share/gtk-doc/html/libxfce4panel/style.css
-  /usr/share/gtk-doc/html/libxfce4panel/up.png
-
-------------------
-
 Port Notes:
+
+----- version 4.6.2-1 -----
+Version bump.
 
 ----- version 4.6.1-1 -----
 Initial release of Xfce 4.6 for Cygwin 1.7.
