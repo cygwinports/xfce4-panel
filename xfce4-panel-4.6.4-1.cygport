@@ -1,9 +1,0 @@
-inherit xfce4
-
-DESCRIPTION="Xfce4 desktop panel"
-
-PKG_NAMES="${PN} libxfce4panel1 libxfce4panel-devel"
-xfce4_panel_CONTENTS="--exclude=gtk-doc etc/ usr/bin/*.exe usr/lib/xfce4/ usr/share/"
-libxfce4panel1_CONTENTS="usr/bin/cygxfce4panel-1.dll"
-libxfce4panel_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/
-                              usr/share/gtk-doc/"

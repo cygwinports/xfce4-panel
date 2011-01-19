@@ -1,0 +1,10 @@
+inherit xfce4
+
+DESCRIPTION="Xfce4 desktop panel"
+
+PATCH_URI="4.8.0-as-needed.patch"
+
+PKG_NAMES="${PN} ${PN}-devel"
+xfce4_panel_CONTENTS="--exclude=gtk-doc etc/ usr/bin/ usr/lib/xfce4/ usr/share/"
+xfce4_panel_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/
+                            usr/share/gtk-doc/"

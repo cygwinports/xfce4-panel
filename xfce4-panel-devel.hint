@@ -1,0 +1,5 @@
+category: Xfce
+requires: xfce4-panel libgdk_pixbuf2.0-devel libglib2.0-devel libgtk2.0-devel libX11-devel libxfce4util-devel
+external-source: xfce4-panel
+sdesc: "Xfce4 desktop panel (plugin development)"
+ldesc: "Xfce4 desktop panel"

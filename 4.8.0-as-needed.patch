@@ -1,0 +1,12 @@
+--- origsrc/xfce4-panel-4.8.0/panel/Makefile.am	2011-01-16 10:02:41.000000000 -0600
++++ src/xfce4-panel-4.8.0/panel/Makefile.am	2011-01-18 22:27:08.303692700 -0600
+@@ -69,8 +69,8 @@ xfce4_panel_LDFLAGS = \
+ 	$(PLATFORM_LDFLAGS)
+ 
+ xfce4_panel_LDADD = \
+-	$(top_builddir)/libxfce4panel/libxfce4panel-$(LIBXFCE4PANEL_VERSION_API).la \
+ 	$(top_builddir)/common/libpanel-common.la \
++	$(top_builddir)/libxfce4panel/libxfce4panel-$(LIBXFCE4PANEL_VERSION_API).la \
+ 	$(GTK_LIBS) \
+ 	$(EXO_LIBS) \
+ 	$(GMODULE_LIBS) \
